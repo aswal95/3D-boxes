@@ -1,0 +1,26 @@
+/* style.css */
+body {
+  margin: 0;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  grid-gap: 10px;
+  perspective: 800px; /* helps in creating 3D effect */
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(145deg, #1e1e1e, #333);
+  border: 1px solid #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
